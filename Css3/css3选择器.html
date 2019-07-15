@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>选择器</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wap >div{
+				width: 100px;
+				height: 100px;
+				background: #bfa;
+				display: none;
+				text-align: center;
+				line-height: 100px;
+			}
+			.wap >a{
+				text-decoration: none;
+				color: pink;
+				font: 10px "微软雅黑";
+			}
+			.wap :target{
+				display: block;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wap">
+			<a href="#div1">div1</a>
+			<a href="#div2">div2</a>
+			<a href="#div3">div2</a>
+			<div id="div1">div1</div>
+			<div id="div2">div2</div>
+			<div id="div3">div3</div>
+		</div>
+	</body>
+</html>

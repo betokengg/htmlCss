@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.wap{
+				width: 300px;
+				margin: 0 auto;
+			}
+			.wap>li{
+				list-style: none;
+			}
+			/*.wap下的所有ele元素,并选中第一个(计数从父元素开始)  .wap ele:nth-child(1){}*/
+			/*.wap li:nth-child(1){
+				color: red;
+			}*/
+			/*.wap下的所有的ele元素,并选中第一个(计数从所有的ele元素的第一个开始) .wap ele:nth-of-child(1){}*/
+			/*.wap p:nth-of-type(1){
+				color: #eee;
+			}*/
+			.wap li:last-of-type{
+				color: gold;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="wap">
+			<p>BB</p>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<p>AA</p>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<p>CC</p>
+		</ul>
+	</body>
+</html>
